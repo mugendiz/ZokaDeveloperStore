@@ -17,27 +17,27 @@
 }
 
 .header {
-  background-image: url("../marble.jpeg");
+  background-image: url("../images/marble.jpeg");
   background-size: cover;
   padding: 0.5rem;
   text-align: center;
 
 }
 
-/*.container {
-  background-color: #F5F5F5;
-}*/
+body {
+  background-image: linear-gradient(#F5F5F5, yellow);
+}
+
 
 #topnav {
   overflow: hidden;
-  /*background-image: url("../marble.jpeg");*/
-
+  background-color: #000000;
 }
 
 #topnav a {
   float: left;
   display: block;
-  color: #000;
+  color: #fab999;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -45,13 +45,13 @@
 }
 
 #topnav a:hover {
+  background-color: #fab888;
   color: #000000;
-  border-bottom: 5px solid #fab888;
 }
 
 #topnav a.active {
+  background-color: #F5F5F5;
   color: #000000;
-  border-bottom: 5px solid #fab888;
 }
 
 #topnav input[type=text] {
@@ -66,10 +66,6 @@
 #all {
   width: 20%;
   float: right;
-}
-
-body {
-  background-image: url("marble.jpeg");
 }
 
 .sticky {
@@ -121,4 +117,4 @@ body {
 
   .topnav input[type=text] {
     border: 1px solid #ccc;
-  }
+  }}

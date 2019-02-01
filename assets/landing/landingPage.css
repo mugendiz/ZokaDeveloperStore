@@ -5,6 +5,7 @@
   font-size: 3.5rem;
   color: #fab999;
   text-shadow: 2px 2px 8px #000000;*/
+
   align-items: center;
   height: 8em;
   width: auto;
@@ -17,11 +18,10 @@
 }
 
 .header {
-  background-image: url("../marble.jpeg");
+  background-image: url("../images/marble.jpeg");
   background-size: cover;
   padding: 0.5rem;
   text-align: center;
-
 }
 
 .container {
@@ -30,28 +30,33 @@
 
 #topnav {
   overflow: hidden;
-  background-color: #000000;
+  background-image: linear-gradient(#f5f5f7, #cccc, #cccc, #f5f5f7);
+  background-image: url("../images/marble.jpeg");
+  box-shadow: 0px 0.5px 1px #ccc;
+  align-items: stretch;
+  z-index: 99;
 }
 
 #topnav a {
   float: left;
   display: block;
-  color: #fab999;
   text-align: center;
+  color: black;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
 #topnav a:hover {
-  background-color: #fab888;
-  color: #000000;
+  border-bottom: 5px solid #fab888;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 3px #000000;
+
 }
 
 #topnav a.active {
-  background-color: #F5F5F5;
   color: #000000;
-  float: right;
+  border-bottom: 5px solid #fab888;
 }
 
 #topnav input[type=text] {
@@ -63,26 +68,26 @@
   font-size: 19px;
 }
 
-#all {
-  width: 20%;
-  float: right;
-}
-
 body {
-  background-image: url("marble.jpeg");
+  background-image: url("../images/marble.jpeg");
   position: static;
 }
 
+#all {
+  width: 20%;
+}
+
 .sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 77%;
+  width: 100%;
 }
 
 /*CONTENT*/
 
 .row {
   padding: 1em;
+  z-index: -9;
 }
 
 .choiceItems {
@@ -95,19 +100,19 @@ body {
   padding: 1rem;
 }
 
-
 /* CAROUSEL */
-
-.carousel-control-next {
-  background: #E8E8E8;
-}
-
-.carousel-control-prev {
-  background: #E8E8E8;
-}
 
 .row {
   align-items: center;
+}
+
+.PRODUCT1 {
+  width: 300px;
+  height: auto;
+}
+
+.container-fluid {
+  background: rgba(61, 61, 107, 0.5);
 }
 
 @media screen and (max-width: 600px) {
@@ -122,4 +127,4 @@ body {
 
   .topnav input[type=text] {
     border: 1px solid #ccc;
-  }
+  }}
